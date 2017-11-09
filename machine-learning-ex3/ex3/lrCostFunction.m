@@ -39,13 +39,6 @@ J = sum(-y .* log(sigmoid(X * theta)) - (1 - y) .* log(1 - sigmoid(X * theta)))/
 grad = (X' * (sigmoid(X * theta) - y)) / m + lambda / m * theta;
 grad(1) = sum(sigmoid(X * theta) - y)/m;
 
-
-
-
-
-
-
-
 % =============================================================
 
 grad = grad(:);
